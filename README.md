@@ -7,6 +7,7 @@ Show triangle view.
 How to Use
 =====
 
+To see how the TriangleLabelView are added to your xml layouts, check the sample project.
 
 ```
 <jp.shts.android.library.TriangleLabelView
@@ -30,15 +31,24 @@ How to Use
 
 Install
 =====
-Just add the dependency to your `build.gradle`:
+
+Add it in your root `build.gradle` at the end of repositories:
+
+```groovy
+allprojects {
+		repositories {
+			...
+			maven { url "https://jitpack.io" }
+		}
+}
+```
+Add the dependency
 
 ```groovy
 dependencies {
-    compile 'XXXXXXXXXXXXXXXXXXXXXXX'
+	  compile 'com.github.shts:TriangleLabelView:1.0.0'
 }
 ```
-
-To see how the TriangleLabelView are added to your xml layouts, check the sample project.
 
 Credits
 =======
