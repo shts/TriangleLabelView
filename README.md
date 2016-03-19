@@ -2,6 +2,32 @@ TriangleLabelView
 ====================
 Show triangle view.
 
+<img src="/img/capture.png">
+
+How to Use
+=====
+
+
+```
+<jp.shts.android.library.TriangleLabelView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    app:backgroundColor="@color/yellow_900"
+    app:corner="leftTop"
+    app:labelBottomPadding="5dp"
+    app:labelCenterPadding="0dp"
+    app:labelTopPadding="10dp"
+    app:primaryText="New"
+    app:primaryTextColor="@color/yellow_500"
+    app:primaryTextSize="16sp"
+    app:secondaryText="01"
+    app:secondaryTextColor="@color/yellow_100"
+    app:secondaryTextSize="11sp" />
+
+```
+
 Install
 =====
 Just add the dependency to your `build.gradle`:
