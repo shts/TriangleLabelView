@@ -2,7 +2,7 @@ TriangleLabelView
 ====================
 Show triangle view.
 
-<img src="/img/capture.png">
+<img src="/img/capture.png" style="width:150px">
 
 How to Use
 =====
