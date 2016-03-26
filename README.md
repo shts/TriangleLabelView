@@ -2,6 +2,8 @@ TriangleLabelView
 ====================
 Show triangle view.
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-TriangleLabelView-green.svg?style=true)](https://android-arsenal.com/details/1/3336)
+
 <img src="/img/capture.png" style="width:150px">
 
 How to Use
