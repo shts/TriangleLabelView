@@ -4,6 +4,9 @@ Show triangle view.
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-TriangleLabelView-green.svg?style=true)](https://android-arsenal.com/details/1/3336)
 
+[![](https://jitpack.io/v/shts/TriangleLabelView.svg)](https://jitpack.io/#shts/TriangleLabelView)
+
+
 <img src="/img/capture.png" style="width:150px">
 
 How to Use
@@ -47,9 +50,9 @@ allprojects {
 Add the dependency
 
 ```groovy
-dependencies {
-	  compile 'com.github.shts:TriangleLabelView:1.0.0'
-}
+	dependencies {
+	        compile 'com.github.shts:TriangleLabelView:1.1.0'
+	}
 ```
 
 Credits
