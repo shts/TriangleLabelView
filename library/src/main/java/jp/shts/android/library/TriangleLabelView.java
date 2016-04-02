@@ -165,6 +165,7 @@ public class TriangleLabelView extends View {
 
     public void setLabelCenterPadding(float dp) {
         centerPadding = dp2px(dp);
+        relayout();
     }
 
     public float getLabelCenterPadding() {
@@ -173,6 +174,7 @@ public class TriangleLabelView extends View {
 
     public void setLabelBottomPadding(float dp) {
         bottomPadding = dp2px(dp);
+        relayout();
     }
 
     public float getLabelBottomPadding() {
@@ -182,11 +184,13 @@ public class TriangleLabelView extends View {
     public void setPrimaryText(String text) {
         primary.text = text;
         primary.resetStatus();
+        relayout();
     }
 
     public void setPrimaryText(@StringRes int textRes) {
         primary.text = getContext().getString(textRes);
         primary.resetStatus();
+        relayout();
     }
 
     public String getPrimaryText() {
@@ -196,11 +200,13 @@ public class TriangleLabelView extends View {
     public void setSecondaryText(String smallText) {
         secondary.text = smallText;
         secondary.resetStatus();
+        relayout();
     }
 
     public void setSecondaryText(@StringRes int textRes) {
         secondary.text = getContext().getString(textRes);
         secondary.resetStatus();
+        relayout();
     }
 
     public String getSecondaryText() {
@@ -211,32 +217,38 @@ public class TriangleLabelView extends View {
         primary.color = color;
         primary.initPaint();
         primary.resetStatus();
+        relayout();
     }
 
     public void setPrimaryTextColorResource(@ColorRes int colorResource) {
         primary.color = ContextCompat.getColor(getContext(), colorResource);
         primary.initPaint();
         primary.resetStatus();
+        relayout();
     }
 
     public void setSecondaryTextColor(@ColorInt int color) {
         secondary.color = color;
         secondary.initPaint();
         secondary.resetStatus();
+        relayout();
     }
 
     public void setSecondaryTextColorResource(@ColorRes int colorResource) {
         secondary.color = ContextCompat.getColor(getContext(), colorResource);
         secondary.initPaint();
         secondary.resetStatus();
+        relayout();
     }
 
     public void setPrimaryTextSize(float sp) {
         primary.size = sp2px(sp);
+        relayout();
     }
 
     public void setSecondaryTextSize(float sp) {
         secondary.size = sp2px(sp);
+        relayout();
     }
 
     public float getPrimaryTextSize() {
@@ -250,11 +262,13 @@ public class TriangleLabelView extends View {
     public void setTriangleBackgroundColor(@ColorInt int color) {
         backGroundColor = color;
         trianglePaint.setColor(backGroundColor);
+        relayout();
     }
 
     public void setTriangleBackgroundColorResource(@ColorRes int colorResource) {
         backGroundColor = ContextCompat.getColor(getContext(), colorResource);
         trianglePaint.setColor(backGroundColor);
+        relayout();
     }
 
     public int getTriangleBackGroundColor() {
@@ -263,6 +277,7 @@ public class TriangleLabelView extends View {
 
     public void setCorner(Corner corner) {
         this.corner = corner;
+        relayout();
     }
 
     public Corner getCorner() {
@@ -339,4 +354,11 @@ public class TriangleLabelView extends View {
         return spValue * scale;
     }
 
+    /**
+     * Should be called whenever what we're displaying could have changed.
+     */
+    private void relayout() {
+        invalidate();
+        requestLayout();
+    }
 }
