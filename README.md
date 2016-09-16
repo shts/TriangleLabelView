@@ -7,7 +7,8 @@ Show triangle view.
 [![](https://jitpack.io/v/shts/TriangleLabelView.svg)](https://jitpack.io/#shts/TriangleLabelView)
 
 
-<img src="/img/capture.png" style="width:150px">
+<img src=https://github.com/shts/TriangleLabelView/blob/master/img/capture.png width="300" />
+
 
 How to Use
 =====
