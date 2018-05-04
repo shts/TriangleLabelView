@@ -52,7 +52,7 @@ Add the dependency
 
 ```groovy
 	dependencies {
-	        compile 'com.github.shts:TriangleLabelView:1.1.2'
+	        implementation 'com.github.shts:TriangleLabelView:1.1.2'
 	}
 ```
 
